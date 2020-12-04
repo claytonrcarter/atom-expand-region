@@ -90,7 +90,7 @@
         recursive: true
       }
     ]
-'.source.js':
+'.source.js, .source.php, .text.html.php':
   'expand-region':
     commands: [
       {
@@ -98,11 +98,11 @@
         recursive: false
       }
       {
-        command: 'expand-region:select-word-include-dash',
+        command: 'expand-region:select-word-include-dash'
         recursive: false
       }
       {
-        command: 'expand-region:select-word-include-dash-and-dot',
+        command: 'expand-region:select-word-include-dash-and-dot'
         recursive: false
       }
       {
@@ -134,10 +134,6 @@
         recursive: true
       }
       {
-        command: 'expand-region:select-inside-back-ticks'
-        recursive: true
-      }
-      {
         command: 'expand-region:select-around-parentheses'
         recursive: true
       }
@@ -154,12 +150,20 @@
         recursive: true
       }
       {
-        command: 'expand-region:select-around-back-ticks'
+        command: 'expand-region:select-around-square-brackets'
         recursive: true
       }
       {
         command: 'expand-region:select-inside-back-ticks'
         recursive: true
+      }
+      {
+        command: 'expand-region:select-around-back-ticks'
+        recursive: true
+      }
+      {
+        command: 'core:select-all'
+        recursive: false
       }
     ]
 '.source.js.jsx':
@@ -174,11 +178,11 @@
         recursive: true
       }
       {
-        command: 'expand-region:select-word-include-dash',
+        command: 'expand-region:select-word-include-dash'
         recursive: false
       }
       {
-        command: 'expand-region:select-word-include-dash-and-dot',
+        command: 'expand-region:select-word-include-dash-and-dot'
         recursive: false
       }
       {
